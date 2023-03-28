@@ -1,53 +1,54 @@
 import './styles/main.scss';
 import logo5 from './assets/logo5.png';
 
-let contArr = [
-    {   img: logo5,
-        itemCount: 1,
-        likes: 4,
-    },
-    {
-        img: logo5,
-        itemCount: 2,
-        likes: 9,
-    },
-    {
-        img: logo5,
-        itemCount: 3,
-        likes: 1,
-    },
-    {
-        img: logo5,
-        itemCount: 4,
-        likes: 6,
-    },
-    {
-        img: logo5,
-        itemCount: 5,
-        likes: 7,
-    },
-    {
-        img: logo5,
-        itemCount: 6,
-        likes: 0,
-    },
-]
+const contArr = [
+  {
+    img: logo5,
+    itemCount: 1,
+    likes: 4,
+  },
+  {
+    img: logo5,
+    itemCount: 2,
+    likes: 9,
+  },
+  {
+    img: logo5,
+    itemCount: 3,
+    likes: 1,
+  },
+  {
+    img: logo5,
+    itemCount: 4,
+    likes: 6,
+  },
+  {
+    img: logo5,
+    itemCount: 5,
+    likes: 7,
+  },
+  {
+    img: logo5,
+    itemCount: 6,
+    likes: 0,
+  },
+];
 
 const leng = contArr.length;
 
 const container = document.querySelector('.grid_container');
 
-const logo =document.getElementById('logo');
+const logo = document.getElementById('logo');
 logo.src = logo5;
 
 const totalItems = document.querySelector('.item_number');
 totalItems.innerHTML = `Space ships(${leng})`;
 
-//container.innerHTML = 'We made it';
+// container.innerHTML = 'We made it';
 container.innerHTML = '';
-let result = ``;
+let result = '';
 contArr.forEach((item) => {
-    result += `
+  result += `
     <section class="sec">
                 <img class="grid_img" src=${item.img} alt="space">
                 <br>
@@ -62,8 +63,7 @@ contArr.forEach((item) => {
                 <button class="comment">Comments</button>
             </section>
 
-    `;   
-
+    `;
 });
 
 container.innerHTML = result;
