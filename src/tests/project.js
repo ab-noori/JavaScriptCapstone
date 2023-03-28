@@ -1,21 +1,25 @@
 class Calculator {
-  static add(a, b) {
-    return a + b;
+  add(a, b) {
+    this.result = a + b;
+    return this.result;
   }
 
-  static subtract(a, b) {
-    return a - b;
+  subtract(a, b) {
+    this.result = a - b;
+    return this.result;
   }
 
-  static divide(a, b) {
+  divide(a, b) {
     if (b === 0) {
       throw new Error('Cannot divide by zero');
     }
-    return a / b;
+    this.result = a / b;
+    return this.result;
   }
 
-  static multiply(a, b) {
-    return a * b;
+  multiply(a, b) {
+    this.result = a * b;
+    return this.result;
   }
 }
 
