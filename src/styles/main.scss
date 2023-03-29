@@ -27,6 +27,8 @@ body {
 
 header {
   display: flex;
+ 
+  align-items: center;
   margin-bottom: 30px;
   gap: 80px;
   color: $secondary-color;
@@ -36,10 +38,6 @@ header {
 
 .item_number {
   text-decoration: underline;
-}
-
-.fa-sharp {
-  color: $secondary-color;
 }
 
 .grid_container {
@@ -68,20 +66,35 @@ header {
   display: flex;
   justify-content: space-between;
   color: $secondary-color;
-  font-size: 32px;
+  font-size: 20px;
   width: 100%;
+  height: 100px;
+} 
+
+.like_cont {
+  height: auto;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+}
+
+.fa-sharp {
+  color: red;
 }
 
 .comment {
   width: 100%;
   height: 70px;
   font-size: 32px;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
 }
-
+/*
 .btn {
   background-color: $primary-color;
   color: $secondary-color;
@@ -99,7 +112,7 @@ header {
   &:focus {
     outline: 0;
   }
-}
+}*/
 
 footer {
   border-top: 2px solid $secondary-color;
@@ -109,4 +122,5 @@ footer {
   padding-left: 40px;
   font-size: 32px;
   color: $secondary-color;
+  background: red;
 }
