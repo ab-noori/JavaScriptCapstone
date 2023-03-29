@@ -1,69 +1,79 @@
 import './styles/main.scss';
 import logo5 from './assets/logo5.png';
-
-const contArr = [
-  {
-    img: logo5,
-    itemCount: 1,
-    likes: 4,
-  },
-  {
-    img: logo5,
-    itemCount: 2,
-    likes: 9,
-  },
-  {
-    img: logo5,
-    itemCount: 3,
-    likes: 1,
-  },
-  {
-    img: logo5,
-    itemCount: 4,
-    likes: 6,
-  },
-  {
-    img: logo5,
-    itemCount: 5,
-    likes: 7,
-  },
-  {
-    img: logo5,
-    itemCount: 6,
-    likes: 0,
-  },
-];
-
-const leng = contArr.length;
-
-const container = document.querySelector('.grid_container');
+import { getMovie, involve } from './modules/getMovies.js';
 
 const logo = document.getElementById('logo');
 logo.src = logo5;
 
-const totalItems = document.querySelector('.item_number');
-totalItems.innerHTML = `Space ships(${leng})`;
+const container = document.querySelector('.grid_container');
 
-// container.innerHTML = 'We made it';
+async function display(data) {   
+    const leng = data.length;
+    const totalItems = document.querySelector('.item_number');
+    totalItems.innerHTML = `Movies(${leng})`;
+
 container.innerHTML = '';
 let result = '';
-contArr.forEach((item) => {
-  result += `
-    <section class="sec">
-                <img class="grid_img" src=${item.img} alt="space">
-                <br>
-                <div class="space_like">
-                    <div>Space ${item.itemCount}</div>
-                    <div class="like_cont">
-                        <i class="fa-sharp fa-regular fa-heart"></i>
-                        <div>${item.likes} likes</div>
-                    </div>
-                </div>
-                <br>
-                <button class="comment">Comments</button>
-            </section>
+data.forEach((item) => {
+    const section = document.createElement('section');
+    section.classList.add('sec');
 
-    `;
+    const movie_img = document.createElement('img');
+    movie_img.classList.add('grid_img');
+    movie_img.src = item.image.medium;
+
+    const spacelikeCont = document.createElement('div');
+    spacelikeCont.classList.add('space_like');
+
+    const name = document.createElement('div')
+    name.innerText = `${item.id}.  ${item.name} `;
+
+    const likeCont = document.createElement('div');
+    likeCont.classList.add('like_cont');
+
+    const likeBtn = document.createElement('button');
+    likeBtn.innerHTML = `<i class="fa-sharp fa-regular fa-heart"></i>`;
+
+    const likes = document.createElement('div');
+    likes.innerText = `${item.id} likes`;
+
+    const commentBtn = document.createElement('button');
+    commentBtn.innerText = 'comments'
+    commentBtn.classList.add('comment');
+
+    section.appendChild(movie_img);
+    section.appendChild(spacelikeCont);
+    spacelikeCont.appendChild(name);
+    spacelikeCont.appendChild(likeCont);
+
+    likeCont.appendChild(likeBtn);
+    likeCont.appendChild(likes);
+
+    container.appendChild(section);
+    section.appendChild(commentBtn);
+//comment event listener
+    commentBtn.addEventListener('click', () => {
+        alert(item.id);
+    });
+
+    
 });
 
-container.innerHTML = result;
+}
+
+async function show() {
+    let showMovie = await getMovie();
+    display(showMovie);
+}
+
+show();
+
+
+/*
+const commentBtn = document.querySelector('.comment');
+commentBtn.addEventListener('click', () => {
+    alert(ok)
+})*/
+
+
+
