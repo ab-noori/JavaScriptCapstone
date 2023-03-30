@@ -7,7 +7,7 @@ logo.src = logo5;
 
 const container = document.querySelector('.grid_container');
 
-console.log(getLikes());
+// console.log(getLikes());
 
 async function display(data) {
   const leng = data.length;
@@ -63,7 +63,7 @@ async function display(data) {
     section.appendChild(commentBtn);
     // comment event listener
     commentBtn.addEventListener('click', () => {
-      alert(item.id);
+      // alert(item.id);
     });
 
     likeBtn.addEventListener('click', async () => {
