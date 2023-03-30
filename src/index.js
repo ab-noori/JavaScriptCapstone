@@ -7,15 +7,7 @@ logo.src = logo5;
 
 const container = document.querySelector('.grid_container');
 
-const apiDataExchange = async() => {
-  const movieData = await getMovie();
-  movieData.forEach((item) => {
-    //postLikes(item.id, 0);
-    //console.log(item)
-    //return item;
-  }); //console.log(item) 
-}
-apiDataExchange()
+console.log(getLikes());
 
 async function display(data) {
   const leng = data.length;
@@ -23,8 +15,7 @@ async function display(data) {
   totalItems.innerHTML = `Movies(${leng})`;
 
   container.innerHTML = '';
-  const result = '';
-  data.forEach((item) => {
+   data.forEach((item) => {
     const section = document.createElement('section');
     section.classList.add('sec');
 
@@ -44,11 +35,8 @@ async function display(data) {
     const likeBtn = document.createElement('button');
     likeBtn.dataset.id = `${item.id}`;
     likeBtn.innerHTML = '<i class="fa-sharp fa-regular fa-heart"></i>';
-
+//like counter function
     const likes = document.createElement('div');
-    
-//    likes.innerText = `${item.id} likes`;
-     // likes.innerText = `${v} likes`;
      const dispLikes = async() => {
       const like = await getLikes();
       like.forEach((id)=> {
@@ -81,22 +69,9 @@ async function display(data) {
     });
 
     likeBtn.addEventListener('click', async() => {
-      const currentLike = await getLikes();     
-      console.log(currentLike);
-      
-     currentLike.forEach((id)=> {
-      //console.log(id.item_id + " " + id.likes) 
-      
-      if(item.id === id.item_id) {
-        let t = id.likes;alert(t)
-        t++;
-        alert(t);
-        postLikes(item.id, t);
-      }
-      /*else if(){
-
-      }*/
-      })    
+      postLikes(item.id);
+      dispLikes();
+    
     });
 
   });
@@ -108,9 +83,3 @@ async function show() {
 }
 
 show();
-
-/*
-const commentBtn = document.querySelector('.comment');
-commentBtn.addEventListener('click', () => {
-    alert(ok)
-}) */
