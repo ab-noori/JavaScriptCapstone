@@ -1,21 +1,36 @@
-export const getMovie = async() => {
-        const getMovie = await fetch('https://api.tvmaze.com/shows');
-        const result = await getMovie.json();
-        return result; 
-}
+export const getMovie = async () => {
+  const getMovie = await fetch('https://api.tvmaze.com/shows');
+  const result = await getMovie.json();
+  return result;
+};
 
-export const involve = async() => {
-    try{
-        const involveData = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/1sJhZQQrIszrR5zukipa/likes/');
-        const involveResult = await(involveData).json();
-        //return involveResult;
 
-        involveResult.forEach(item => {
-            console.log(item.app_id)
+const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/kGrjdjNcrGMNvlVKgo0w/likes'
 
-        });
+export const getLikes = async () => {
+  const likesApi = await fetch(api);
+  const likesArray = await likesApi.json();
+  return likesArray;
+ //console.log(likesArray);
+};
 
-    }catch(err){
-        console.log(err);
-    }
-}
+export const postLikes = async (item_id, likes) => {
+  const settings = {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ item_id, likes }),
+  };  
+    const fetchRes = await fetch(api, settings);
+    const data = await fetchRes.json();
+    return data;
+    //console.log(data); 
+};
+
+
+
+
+
+
+
+
+
