@@ -4,8 +4,7 @@ export const getMovie = async () => {
   return result;
 };
 
-
-const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9GEHYegfEMYFzqSAEOdN/likes'
+const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/9GEHYegfEMYFzqSAEOdN/likes';
 
 export const getLikes = async () => {
   const likesApi = await fetch(api);
@@ -18,15 +17,6 @@ export const postLikes = async (item_id) => {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ item_id }),
-  };  
-    const fetchRes = await fetch(api, settings);  
+  };
+  const fetchRes = await fetch(api, settings);
 };
-
-
-
-
-
-
-
-
-
