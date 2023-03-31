@@ -1,9 +1,9 @@
 module.exports = {
-    // other configuration options...
-    testEnvironment: 'jsdom',
+  // other configuration options...
+  testEnvironment: 'jsdom',
 
-    moduleNameMapper: {
-      "\\.(scss)$": "<rootDir>/__mocks__/styleMock.js"
-    },
-    
-  };
+  moduleNameMapper: {
+    '\\.(scss)$': '<rootDir>/__mocks__/styleMock.js',
+  },
+
+};
