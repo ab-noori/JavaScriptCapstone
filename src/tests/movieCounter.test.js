@@ -2,41 +2,36 @@
  * @jest-environment jsdom
  */
 
-const movieCounter = require('./movieCounter.js');
+const movieCount = require('./movieCounter.js');
+
 
 describe('Test movie counter', () => {
-  it('return null', () => {
+  it('Movie counter returns zero since no value was diplayed', () => {
+    //Arrange
     document.body.innerHTML = `
-        <div class="item_number"></div>`;
+        <main></main>`;
+    
+    //Act
+    const movie = movieCount();
 
-    const data = [];
-    const leng = movieCounter(data);
-    const totalItems = document.querySelector('.item_number');
-    totalItems.innerHTML = `Movies(${leng})`;
-
-    expect(leng).toBe(0);
+    //Assert
+    expect(movie).toBe(0);
   });
 
-  it('return null', () => {
+  it('The movie counter returns the right number of movies displayed', () => {
+    //Arrange
     document.body.innerHTML = `
-        <div class="item_number"></div>
-        <main class="grid_container">            
-        </main>
-        `;
+        <main>
+            <div class="sec"></div>
+            <div class="sec"></div>
+            <div class="se"></div>
+        </main>`;
+    
+    //Act
+    const movie = movieCount();
 
-    const data = ['lions', 'We are here', 'Dont go'];
-    const leng = movieCounter(data);
-    const totalItems = document.querySelector('.item_number');
-    totalItems.innerHTML = `Movies(${leng})`;
-
-    data.forEach((item) => {
-      const movieCont = document.querySelector('.grid_container');
-      const movie = document.createElement('div');
-      movieCont.appendChild(movie);
-
-      movie.innerHTML = `${item.name}`;
-    });
-
-    expect(leng).toBe(3);
+    //Assert
+    expect(movie).toBe(2);
   });
+
 });
