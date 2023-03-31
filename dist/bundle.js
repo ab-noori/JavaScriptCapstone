@@ -70,7 +70,7 @@ var getLikes = /*#__PURE__*/function () {
   };
 }();
 var postLikes = /*#__PURE__*/function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(itemDi) {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(item_id) {
     var settings, fetchRes;
     return _regeneratorRuntime().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
@@ -81,14 +81,15 @@ var postLikes = /*#__PURE__*/function () {
               'content-type': 'application/json'
             },
             body: JSON.stringify({
-              itemDi: itemDi
+              item_id: item_id
             })
           };
           _context3.next = 3;
           return fetch(api, settings);
         case 3:
           fetchRes = _context3.sent;
-        case 4:
+          return _context3.abrupt("return", fetchRes);
+        case 5:
         case "end":
           return _context3.stop();
       }
