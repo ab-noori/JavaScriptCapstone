@@ -1,5 +1,5 @@
 function movieCounter(data) {
-    return data.length; 
-  }
+  return data.length;
+}
 
-  module.exports = movieCounter;
+module.exports = movieCounter;
