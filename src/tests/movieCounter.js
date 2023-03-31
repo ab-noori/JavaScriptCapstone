@@ -1,3 +1,3 @@
-const  movieCount = () => document.querySelectorAll('.sec').length;
-  
+const movieCount = () => document.querySelectorAll('.sec').length;
+
 module.exports = movieCount;
