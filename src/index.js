@@ -7,15 +7,13 @@ logo.src = logo5;
 
 const container = document.querySelector('.grid_container');
 
-// console.log(getLikes());
-export default function movieCounter(data) {
-  return data.length; 
+function movieCounter(data) {
+  return data.length;
 }
 
 module.exports = movieCounter;
 
 async function display(data) {
-  
   const leng = movieCounter(data);
   const totalItems = document.querySelector('.item_number');
   totalItems.innerHTML = `Movies(${leng})`;
