@@ -62,7 +62,10 @@
     <ul>
       <li><a href="https://reactjs.org/">HTML</a></li>
       <li><a href="https://reactjs.org/">SCSS</a></li>
+      <li><a href="https://reactjs.org/">API</a></li>
       <li><a href="https://reactjs.org/">JavaScript</a></li>
+      <li><a href="https://reactjs.org/">Webpack 5</a></li>
+      <li><a href="https://reactjs.org/">Jest Testing Framework</a></li>
     </ul>
 
 
@@ -123,6 +126,14 @@ Install this project with:
 - To display data.
 - To remove data from local storage.
 
+
+### Run tests
+- Run the following script and style test:
+
+      npm test
+      npx eslint .
+      npx stylelint "**/*.{css,scss}"
+      
 ### Deployment
 
 You can deploy this project using:
@@ -175,8 +186,7 @@ Feel free to check the [issues page](https://github.com/ab-noori/JavaScriptCapst
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  I would like to thank Microverse and my coding partners, and also give credit to Traversy Media
-YouTub Channel, I really learned a lot from this channel.
+  We would like to thank Microverse and our coding partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
