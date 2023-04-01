@@ -119,11 +119,10 @@ Install this project with:
 
 
 ### Usage
+- Use following commands to run on your local system:
 
-- To add data the local storage of browser
-- To read data from local storage of browser.
-- To display data.
-- To remove data from local storage.
+      npm run build
+      npm run dev
 
 
 ### Run tests
@@ -153,7 +152,7 @@ You can deploy this project using:
 
 👤 **Frank Mugagga**
 
-GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
+- GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
 - Twitter: [@twitterhandle](https://www.twitter.com/@mugagga_frank)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/frank-mugagga-17658225a)
 
