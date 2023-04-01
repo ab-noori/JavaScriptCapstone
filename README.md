@@ -83,9 +83,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://github.com/ab-noori/JavaScriptCapstone)
+> [Live Demo Link](https://github.com/ab-noori/JavaScriptCapstone)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
