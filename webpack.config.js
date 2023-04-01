@@ -30,7 +30,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack App',
+      title: 'Amazing Movies',
       filename: 'index.html',
       template: 'src/template.html',
     }),

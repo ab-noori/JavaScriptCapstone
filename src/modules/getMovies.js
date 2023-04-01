@@ -17,8 +17,8 @@ export const postLikes = async (item) => {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ item_id: item }),
-
   };
+
   const fetchRes = await fetch(api, settings);
   return fetchRes;
 };

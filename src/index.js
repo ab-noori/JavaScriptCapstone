@@ -1,5 +1,6 @@
 import './styles/main.scss';
 import logo5 from './assets/logo5.png';
+import showSelectedMovie from './modules/popUp.js';
 import { getMovie, getLikes, postLikes } from './modules/getMovies.js';
 
 const logo = document.getElementById('logo');
@@ -64,9 +65,9 @@ async function display(data) {
 
     container.appendChild(section);
     section.appendChild(commentBtn);
-    // comment event listener
+
     commentBtn.addEventListener('click', () => {
-      // alert(item.id);
+      showSelectedMovie(item.id);
     });
 
     likeBtn.addEventListener('click', async () => {
