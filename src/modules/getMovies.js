@@ -12,7 +12,6 @@ export const getLikes = async () => {
   return likesArray;
 };
 
-
 export const postLikes = async (item) => {
   const settings = {
     method: 'POST',
