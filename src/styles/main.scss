@@ -32,9 +32,10 @@ header {
   gap: 80px;
   color: $secondary-color;
   font-size: 32px;
-  width: 70%;border: 2px solid red;
+  width: 70%;
+  border: 2px solid red;
   height: auto;
-  background-image: linear-gradient(black, rgb(39, 30, 30),gray);
+  background-image: linear-gradient(black, rgb(39, 30, 30), gray);
 }
 
 .logo {
@@ -44,15 +45,17 @@ header {
 
 .head_cont {
   display: flex;
-  align-items: center;  
-  justify-content: space-between;border: 2px solid green;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid green;
   width: 70%;
   height: 120px;
 }
 
 .head_size {
   width: 60%;
-  flex-grow: 10; border: 2px solid red;
+  flex-grow: 10;
+  border: 2px solid red;
 }
 
 .item_number {
@@ -65,7 +68,8 @@ header {
   gap: 20px;
   width: 70%;
   height: auto;
-  margin-bottom: 80px;border: 2px solid white;
+  margin-bottom: 80px;
+  border: 2px solid white;
 }
 
 .grid_img {
@@ -93,11 +97,13 @@ header {
   font-size: 20px;
   width: 100%;
   height: 80px;
-  margin-bottom: 0;border: 2px solid green;
+  margin-bottom: 0;
+  border: 2px solid green;
 }
 
 .like_cont {
-  height: auto;border: 2px solid red;
+  height: auto;
+  border: 2px solid red;
 }
 
 button {
@@ -114,7 +120,6 @@ button {
   font-size: 32px;
   color: $secondary-color;
   background: black;
-  display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid $secondary-color;
@@ -131,10 +136,11 @@ footer {
   color: $secondary-color;
   background: red;
 }
+
 /*
 @media screen and (max-width: 768px) {
   .grid_container {
     grid-template-columns: 1fr 1fr;
-  } 
-  
-}*/
+  }
+
+} */
