@@ -84,7 +84,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > - [Live Demo Link](https://ab-noori.github.io/JavaScriptCapstone/dist/)
-> - [Introduction to Project](https://drive.google.com/file/d/1ufjeJg2yHZnjUVLRUDhykN1asfIiACeu/view?usp=sharing)
+> - [Introduction to Project](https://drive.google.com/file/d/1y3x6D4IaNynZK6jFlNIcal2iAfAt08bo/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
