@@ -986,7 +986,7 @@ function display(_x) {
 }
 function _display() {
   _display = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(data) {
-    var leng, totalItems, result;
+    var leng, totalItems;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
@@ -994,13 +994,13 @@ function _display() {
           totalItems = document.querySelector('.item_number');
           totalItems.innerHTML = "Movies(".concat(leng, ")");
           container.innerHTML = '';
-          result = '';
+          // const result = '';
           data.forEach(function (item) {
             var section = document.createElement('section');
             section.classList.add('sec');
-            var movie_img = document.createElement('img');
-            movie_img.classList.add('grid_img');
-            movie_img.src = item.image.medium;
+            var movieImg = document.createElement('img');
+            movieImg.classList.add('grid_img');
+            movieImg.src = item.image.medium;
             var spacelikeCont = document.createElement('div');
             spacelikeCont.classList.add('space_like');
             var name = document.createElement('div');
@@ -1014,7 +1014,7 @@ function _display() {
             var commentBtn = document.createElement('button');
             commentBtn.innerText = 'comments';
             commentBtn.classList.add('comment');
-            section.appendChild(movie_img);
+            section.appendChild(movieImg);
             section.appendChild(spacelikeCont);
             spacelikeCont.appendChild(name);
             spacelikeCont.appendChild(likeCont);
@@ -1027,7 +1027,7 @@ function _display() {
               (0,_modules_popUp_js__WEBPACK_IMPORTED_MODULE_3__["default"])(item.id);
             });
           });
-        case 6:
+        case 5:
         case "end":
           return _context.stop();
       }
