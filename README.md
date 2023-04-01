@@ -80,7 +80,7 @@
 - **[Fetch and send data to an API]**
 - **[Save and retrieve likes, comments]**
 - **[Dynamic data]**
-- **[Unit testing using jest]**
+- **[Unit testing using jest enviroment]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
