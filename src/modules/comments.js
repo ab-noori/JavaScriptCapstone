@@ -1,6 +1,6 @@
 import { countListItems } from '../tests/commentCounter.js';
 
-const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/JLV3hpmsnDwkVwtlFatp/comments';
+const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/yGJsLE5rhYlcLOG1HopD/comments';
 
 const addcommentsToList = (comment) => {
   const list = document.querySelector('#comment-list');

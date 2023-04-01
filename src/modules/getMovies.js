@@ -4,16 +4,21 @@ export const getMovie = async () => {
   return result;
 };
 
-export const involve = async () => {
-  try {
-    const involveData = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/1sJhZQQrIszrR5zukipa/likes/');
-    const involveResult = await (involveData).json();
-    // return involveResult;
+const api = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/yGJsLE5rhYlcLOG1HopD/likes';
 
-    involveResult.forEach((item) => {
-      console.log(item.app_id);
-    });
-  } catch (err) {
-    console.log(err);
-  }
+export const getLikes = async () => {
+  const likesApi = await fetch(api);
+  const likesArray = await likesApi.json();
+  return likesArray;
+};
+
+export const postLikes = async (item) => {
+  const settings = {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ item_id: item }),
+  };
+  
+  const fetchRes = await fetch(api, settings);
+  return fetchRes;
 };

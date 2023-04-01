@@ -8,7 +8,6 @@ $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
-.top_section,
 .like_cont,
 .sec,
 footer,
@@ -28,11 +27,35 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
   gap: 80px;
   color: $secondary-color;
   font-size: 32px;
   width: 70%;
+  border: 2px solid red;
+  height: auto;
+  background-image: linear-gradient(black, rgb(39, 30, 30), gray);
+}
+
+.logo {
+  border: 2px solid $secondary-color;
+  width: 200px;
+}
+
+.head_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid green;
+  width: 70%;
+  height: 120px;
+}
+
+.head_size {
+  width: 60%;
+  flex-grow: 10;
+  border: 2px solid red;
 }
 
 .item_number {
@@ -42,21 +65,27 @@ header {
 .grid_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
   width: 70%;
   height: auto;
   margin-bottom: 80px;
+  border: 2px solid white;
 }
 
 .grid_img {
+  border-radius: 5px;
   width: 100%;
   height: 400px;
+  border: 1px solid $secondary-color;
+}
+
+.grid_img:hover {
   border: 2px solid red;
 }
 
 .sec {
   justify-content: space-between;
-  width: 290px;
+  width: 100%;
   height: 600px;
   border-radius: 8px;
 }
@@ -67,37 +96,40 @@ header {
   color: $secondary-color;
   font-size: 20px;
   width: 100%;
-  height: 100px;
+  height: 80px;
+  margin-bottom: 0;
+  border: 2px solid green;
 }
 
 .like_cont {
   height: auto;
+  border: 2px solid red;
 }
 
 button {
-  width: 80px;
-  height: 80px;
-}
-
-.fa-sharp {
-  color: red;
+  width: 60px;
+  height: 50px;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
 .comment {
+  display: flex;
   width: 100%;
   height: 70px;
   font-size: 32px;
-  color: black;
-  display: flex;
+  color: $secondary-color;
+  background: black;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid $secondary-color;
+  border-radius: 5px;
 }
 
 footer {
   border-top: 2px solid $secondary-color;
   width: 100%;
-  height: 150px;
+  height: 80px;
   justify-content: center;
   padding-left: 40px;
   font-size: 32px;
