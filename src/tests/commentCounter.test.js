@@ -1,13 +1,5 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-const jsdom = require('jsdom');
 const { countListItems } = require('./commentCounter.js');
 
-const { JSDOM } = jsdom;
-
-const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
-global.document = dom.window.document;
-
-// Jest unit tests
 describe('countListItems', () => {
   test('returns 0 for an empty list', () => {
     const list = document.createElement('ul');
