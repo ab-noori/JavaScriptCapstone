@@ -3,11 +3,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="./src/assets/logo5.png" alt="logo" width="500"  height="auto" />
-  <br/>
-
-  <h3><b>Amazing Movies</b></h3>
 
 </div>
 
@@ -25,14 +20,12 @@
 
 -->
 
-> # Template Repository
-### Desktop view shoots for this project:
+> # Amazing Movies
 
-| Desktop Veiw Representation|
+| Project Veiw Screenshots|
 |---------------------------------------|
-|![screenshot](./src/assets/project-image.png)|
-
-<!-- TABLE OF CONTENTS -->
+|<div align="center"><img src="./src/assets/desktop-shot.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/desktop-shot2.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 
 # 📗 Table of Contents
 
