@@ -3,11 +3,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="./src/assets/project-image.png" alt="logo" width="500"  height="auto" />
-  <br/>
-
-  <h3><b></b></h3>
 
 </div>
 
@@ -25,14 +20,12 @@
 
 -->
 
-> # Template Repository
-### Desktop view shoots for this project:
+> # Amazing Movies
 
-| Desktop Veiw Representation|
+| Project Veiw Screenshots|
 |---------------------------------------|
-|![screenshot](./src/assets/project-image.png)|
-
-<!-- TABLE OF CONTENTS -->
+|<div align="center"><img src="./src/assets/desktop-shot.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/desktop-shot2.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 
 # 📗 Table of Contents
 
@@ -58,11 +51,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Amazing Movies] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> **[Amazing Movies]** is a  web application based on a TVmaze API to displays data about TV series and movies. A user can comment, like, and also view information about the movie
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,16 +61,21 @@
 - <summary>Client</summary>
     <ul>
       <li><a href="https://reactjs.org/">HTML</a></li>
-      <li><a href="https://reactjs.org/">Bootstrap</a></li>
+      <li><a href="https://reactjs.org/">SCSS</a></li>
+      <li><a href="https://reactjs.org/">API</a></li>
       <li><a href="https://reactjs.org/">JavaScript</a></li>
+      <li><a href="https://reactjs.org/">Webpack 5</a></li>
+      <li><a href="https://reactjs.org/">Jest Testing Framework</a></li>
     </ul>
 
 
 ### Key Features <a name="key-features"></a>
 
-- **[Responsive layout]**
-- **[UX/UI accessibility]**
+- **[Fetch and send data to an API]**
+- **[Save and retrieve likes, comments]**
 - **[Dynamic data]**
+- **[Unit testing using jest enviroment]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,9 +83,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://ab-noori.github.io/Webpack-Boilerplate/dist/)
+> - [Live Demo Link](https://ab-noori.github.io/JavaScriptCapstone/dist/)
+> - [Introduction to Project](https://drive.google.com/file/d/1y3x6D4IaNynZK6jFlNIcal2iAfAt08bo/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +108,7 @@ Clone this repository to your desired folder:
 - Use the following Commands:
 
       cd your-desired-folder
-      git clone git@github.com:ab-noori/Project-Template.git
+      git clone git@github.com:ab-noori/JavaScriptCapstone.git
 
 
 ### Install
@@ -124,12 +119,19 @@ Install this project with:
 
 
 ### Usage
+- Use following commands to run on your local system:
 
-- To add data the local storage of browser
-- To read data from local storage of browser.
-- To display data.
-- To remove data from local storage.
+      npm run build
+      npm run dev
 
+
+### Run tests
+- Run the following script and style test:
+
+      npm test
+      npx eslint .
+      npx stylelint "**/*.{css,scss}"
+      
 ### Deployment
 
 You can deploy this project using:
@@ -148,17 +150,19 @@ You can deploy this project using:
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdul-ali-noori](https://www.linkedin.com/in/abdul-ali-noori-384b85195/)
 
-👤 **Samson Tush**
+👤 **Frank Mugagga**
 
-- GitHub: [@Samson](https://github.com/SamTush)
+- GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
+- Twitter: [@twitterhandle](https://www.twitter.com/@mugagga_frank)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/frank-mugagga-17658225a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add About page]**
-- [ ] **[Add Contact page]**
+- [ ] **[Add mobile menu]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +170,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ab-noori/Awesome-Books/issues).
+Feel free to check the [issues page](https://github.com/ab-noori/JavaScriptCapstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,8 +184,7 @@ Feel free to check the [issues page](https://github.com/ab-noori/Awesome-Books/i
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  I would like to thank Microverse and my coding partners, and also give credit to Traversy Media
-YouTub Channel, I really learned a lot from this channel.
+  We would like to thank Microverse and our coding partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

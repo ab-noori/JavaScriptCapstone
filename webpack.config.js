@@ -30,7 +30,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack App',
+      title: 'Amazing Movies',
       filename: 'index.html',
       template: 'src/template.html',
     }),
@@ -54,7 +54,7 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, 'dist'),
     },
-    port: 3000,
+    port: 4000,
     open: true,
     hot: true,
     compress: true,
