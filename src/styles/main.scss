@@ -27,7 +27,6 @@ body {
 
 header {
   display: flex;
- 
   align-items: center;
   margin-bottom: 30px;
   gap: 80px;
@@ -69,7 +68,7 @@ header {
   font-size: 20px;
   width: 100%;
   height: 100px;
-} 
+}
 
 .like_cont {
   height: auto;
@@ -94,25 +93,6 @@ button {
   align-items: center;
   border: 2px solid black;
 }
-/*
-.btn {
-  background-color: $primary-color;
-  color: $secondary-color;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
-  font-size: 16px;
-  cursor: pointer;
-
-  &:active {
-    transform: scale(0.98);
-  }
-
-  &:focus {
-    outline: 0;
-  }
-}*/
 
 footer {
   border-top: 2px solid $secondary-color;
@@ -123,4 +103,147 @@ footer {
   font-size: 32px;
   color: $secondary-color;
   background: red;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.9); /* darken the background */
+
+  &::-webkit-scrollbar {
+    width: 15px;
+    height: 3em; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #e0de61; /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 247, 247, 0); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 5px solid #743206; /* creates padding around scroll thumb */
+  }
+}
+
+.modal-content {
+  width: 80%;
+  min-height: 80%;
+  color: white;
+  background-color: #1c1919;
+  margin: 2% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & .image-summary-frame {
+    display: flex;
+    gap: 30px;
+  }
+
+  & .image-frame {
+    display: inline-block;
+    border: 2px solid gainsboro;
+    border-radius: 3px;
+  }
+
+  & img {
+    border-radius: 3px;
+  }
+
+  & h1 {
+    margin-top: 0;
+  }
+
+  & ul {
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #292b2c;
+    gap: 10px;
+  }
+
+  & ul li {
+    display: flex;
+  }
+
+  & ul li dt {
+    width: 50px;
+  }
+
+  & ul li p {
+    margin: 0;
+  }
+
+  & .close-btn {
+    color: red;
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+
+  & .comment-frame {
+    width: 100%;
+    min-height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    & input {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 0;
+    height: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    cursor: pointer;
+    align-self: center;
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
 }
