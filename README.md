@@ -53,9 +53,7 @@
 
 # 📖 [Amazing Movies] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Amazing Movies]** is a  web application based on a TVmaze API to displays data about TV series and movies. A user can comment, like, and also view information about the movie
+> **[Amazing Movies]** is a  web application based on a TVmaze API to displays data about TV series and movies. A user can comment, like, and also view information about the movie
 
 ## 🛠 Built With <a name="built-with"></a>
 
